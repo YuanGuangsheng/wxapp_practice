@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/usercenter/login",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "咕咕监控",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon_speed.png",
+        "selectedIconPath": "images/icon_speed_HL.png"
+      },
+      {
+        "pagePath": "pages/usercenter/login",
+        "text": "用户中心",
+        "iconPath": "images/icon_account.png",
+        "selectedIconPath": "images/icon_account_HL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

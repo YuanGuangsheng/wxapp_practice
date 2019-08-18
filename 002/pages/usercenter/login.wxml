@@ -1,0 +1,21 @@
+<!--logs.wxml-->
+<view class="usercenter">
+  <view class="logo">
+    <image src="../../images/logo.png" style="width:200rpx;height:150rpx;"></image>
+  </view>
+  <view class="section">
+    <input class="input_user" type="text" placeholder="邮箱"/>
+  </view>
+  <view class="section">
+    <input class="input_user" type="password" placeholder="密码"/>
+  </view>
+  <view class="button_group">
+    <button class="user_btn" type="primary"> 登录 </button>
+  </view>
+  <view class="button_group">
+    <button class="user_btn" type="default"> 新用户注册 </button>
+  </view>
+  <view class="button_group">
+    <button class="user_btn" type="default"> 忘记密码 </button>
+  </view>
+</view>
