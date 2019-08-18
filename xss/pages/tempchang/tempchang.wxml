@@ -1,0 +1,90 @@
+<!--pages/tempchang.wxml-->
+<view>
+  <view class='content_bg'>
+    <image style='width: 100%;height: 100%;' src='../../images/content_bg.jpg'></image>
+  </view>
+  <view class='tab_top'>
+    <view class='tab_item'>
+      <text class='tab_num'>14</text>
+      <text class='tab_text'>在线设备</text>
+    </view>
+    <view class='tab_item'>
+      <text class='tab_num'>2</text>
+      <text class='tab_text'>离线设备</text>
+    </view>
+    <view class='tab_item'>
+      <text class='tab_num'>20</text>
+      <text class='tab_text'>GIS监控</text>
+    </view>
+    <view class='tab_item'>
+      <text class='tab_num'>2</text>
+      <text class='tab_text'>变压器噪声</text>
+    </view>
+  </view>
+  <view style='background-color: #e7f0f7;'>
+    <van-tabs active="{{ active }}" color='#0075f6'>
+      <van-tab title="全部">
+        <view class='deviceBox'>
+          <view class='device_item warm'>
+            <view class='device_top'>
+              <text style='color: #fff;'>卧120分段（22板）</text>
+              <van-icon name="star" style='color: #fff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #fff;'>34℃</text>
+            </view>
+          </view>
+          <view class='device_item'>
+            <view class='device_top'>
+              <text style='color: #636161;'>卧120分段（22板）</text>
+              <van-icon name="star" style='color: #0e77ff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #0e77ff;'>26℃</text>
+            </view>
+          </view>
+          <view class='device_item'>
+            <view class='device_top'>
+              <text style='color: #636161;'>卧120分段（22板）</text>
+              <van-icon name="star-o" style='color: #0e77ff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #0e77ff;'>26℃</text>
+            </view>
+          </view>   
+          <view class='device_item'>
+            <view class='device_top'>
+              <text style='color: #636161;'>卧120分段（22板）</text>
+              <van-icon name="star-o" style='color: #0e77ff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #0e77ff;'>26℃</text>
+            </view>
+          </view>
+          <view class='device_item'>
+            <view class='device_top'>
+              <text style='color: #636161;'>卧120分段（22板）</text>
+              <van-icon name="star-o" style='color: #0e77ff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #0e77ff;'>26℃</text>
+            </view>
+          </view>
+          <view class='device_item'>
+            <view class='device_top'>
+              <text style='color: #636161;'>卧120分段（22板）</text>
+              <van-icon name="star-o" style='color: #0e77ff;'/>
+            </view>
+            <view class='device_temp'>
+              <text style='color: #0e77ff;'>26℃</text>
+            </view>
+          </view>     
+        </view>
+      </van-tab>
+      <van-tab title="正常">内容 2</van-tab>
+      <van-tab title="偏高">内容 3</van-tab>
+      <van-tab title="超高">内容 4</van-tab>
+    </van-tabs>
+  </view>
+</view>
+

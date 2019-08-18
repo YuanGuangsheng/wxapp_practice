@@ -1,0 +1,66 @@
+<!--pages/billing/billing.wxml-->
+<view style='background-color: #ebf2f8'>
+  <view class='recode_num'>
+    <text style='margin-left: 20px;'>订单编号：QX2839847485900</text>
+  </view>
+  <view class='recode_box'>
+    <view class='recode_list'>
+      <text>维修类型：抢修</text>
+    </view>
+    <view class='recode_list'>
+      <text>故障描述：电力故障，电表箱损坏</text>
+    </view>
+    <view class='recode_list'>
+      <text>故障诊断：</text>
+       <van-field
+        value="{{ value }}"
+        placeholder="请输入故障诊断结果"
+        border="{{ true }}"
+      />
+    </view>
+      <view class='recode_list'>
+      <text>现场图片：</text>
+    </view>
+    <view>
+      <image style='width:200px;height: 80px;' src='../../images/pic.jpg'></image>
+    </view>
+  </view>
+  <view class='recode_box'>
+    <view class='recode_list'>
+      <text>在场人数：</text>
+      <van-field
+        value="{{ value }}"
+        placeholder="请输入"
+        border="{{ true }}"
+      />
+    </view>
+    <view class='recode_list'>
+      <text>维修人员：</text>
+       <van-field
+        value="{{ value }}"
+        placeholder="请输入"
+        border="{{ true }}"
+      />
+    </view>
+    <view class='recode_list'>
+      <text>人工费用：</text>
+       <van-field
+        value="{{ value }}"
+        placeholder="请输入"
+        border="{{ true }}"
+      />
+    </view>
+     <view class='recode_list'>
+      <text>维修配件：</text>
+       <van-field
+        value="{{ value }}"
+        placeholder="请输入"
+        border="{{ true }}"
+      />
+    </view>
+  </view>
+  <view style='margin-top: 20px;'>
+    <van-button type="info" size="large" bind:click="sendSuccess">出单</van-button>
+    <van-dialog id="van-dialog" />
+  </view>
+</view>

@@ -1,0 +1,19 @@
+/* pages/billing/billing.wxss */
+.recode_num {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  color: #2088f7;
+  font-size: 16px;
+}
+.recode_box {
+  margin-top: 20px;
+  padding: 10px;
+  height: auto;
+  background-color: #fff;
+}
+.recode_list {
+  font-size: 14px;
+  line-height: 30px;
+}

@@ -1,0 +1,88 @@
+<!--pages/home/home.wxml-->
+<view class='home'>
+<!-- 图片 -->
+<view class="imgBox">
+  <image src='../../images/home_bg.jpg' style='width: 100%;height: 100%;'></image>
+</view>
+<!-- tab切换 -->
+<van-tabs active="{{ tabActive }}" bind:change="onChangeTab" color="#065ef3">
+  <van-tab title="全部">
+    <view class="temItem" bindtap='jumpCont'>
+      <view class="warn_tem">
+        <text class='temp_type'>温度超温</text>
+        <text class='temp'>34℃</text>
+      </view>
+      <view class='itemRight'>
+        <view class='temp_title'>
+          <text>220KV 一号变电厂</text>
+          <van-icon name="star-o" class='start'/>
+        </view>
+        <view class="temp_con">
+          <text class='con_item'>环境温度：32℃</text>
+          <text class='con_item'>噪音分贝：33Db</text>
+        </view>
+      </view>
+    </view>
+   <view class="temItem">
+      <view class="nor_tem">
+        <text class='nor_temp_type'>设备温温</text>
+        <text class='nor_temp'>22℃</text>
+      </view>
+      <view class='itemRight'>
+        <view class='temp_title'>
+          <text>320KV 二号变电厂</text>
+          <van-icon name="star-o" class='start'/>
+        </view>
+        <view class="temp_con">
+          <text class='con_item'>环境温度：22℃</text>
+          <text class='con_item'>噪音分贝：30Db</text>
+        </view>
+      </view>
+    </view>
+    <view class="temItem">
+      <view class="nor_tem">
+        <text class='nor_temp_type'>设备温温</text>
+        <text class='nor_temp'>23℃</text>
+      </view>
+      <view class='itemRight'>
+        <view class='temp_title'>
+          <text>220KV 三号变电厂</text>
+          <van-icon name="star-o" class='start'/>
+        </view>
+        <view class="temp_con">
+          <text class='con_item'>环境温度：23℃</text>
+          <text class='con_item'>噪音分贝：32Db</text>
+        </view>
+      </view>
+    </view>
+    <view class="temItem">
+      <view class="nor_tem">
+        <text class='nor_temp_type'>设备温温</text>
+        <text class='nor_temp'>23℃</text>
+      </view>
+      <view class='itemRight'>
+        <view class='temp_title'>
+          <text>220KV 四号变电厂</text>
+          <van-icon name="star-o" class='start'/>
+        </view>
+        <view class="temp_con">
+          <text class='con_item'>环境温度：23℃</text>
+          <text class='con_item'>噪音分贝：30Db</text>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+  <van-tab title="正常">内容 2</van-tab>
+  <van-tab title="偏高">内容 3</van-tab>
+  <van-tab title="超温">内容 4</van-tab>
+</van-tabs>
+<!-- tabber -->
+  <view class='tabbars'>
+    <van-tabbar active="{{ active }}" bind:change="onChange">
+      <van-tabbar-item icon="bar-chart-o">实时监控</van-tabbar-item>
+      <van-tabbar-item icon="setting-o">维修服务</van-tabbar-item>
+      <van-tabbar-item icon="orders-o">事件记录</van-tabbar-item>
+      <van-tabbar-item icon="manager-o">个人中心</van-tabbar-item>
+    </van-tabbar>
+  </view>
+</view>

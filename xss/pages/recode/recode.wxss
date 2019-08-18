@@ -1,0 +1,31 @@
+/* pages/recode/recode.wxss */
+.bg {
+  height: 20px;
+  background-color: #ebf2f8;
+}
+.titleTop {
+  display: flex;
+  flex-direction: row;
+}
+.titleRightTop {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.titleRightBtm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #7c7b7b;
+  height: 30px;
+}
+.recodeBtm {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.redTitle {
+  color: #f63825;
+}

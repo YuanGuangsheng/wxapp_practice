@@ -1,0 +1,114 @@
+<!--pages/recode/recode.wxml-->
+<van-tabs active="{{ active }}" color="#2088f7">
+  <van-tab title="设备告警记录">
+    <view class='bg'></view>
+    <van-collapse value="{{ activeNames }}" bind:change="onChange">
+      <van-collapse-item name="1">
+        <view slot="title" class="titleTop">
+          <van-icon name="info" size="24px" color='#ff3128'/>
+            <view class='titleRightTop'>
+              <text>110KV灵湖变电厂</text>
+              <view class='titleRightBtm'>
+                <text>预警设备：灵湖101（16板）</text>
+                <text>2019-01-22 22:30:32</text>
+              </view>
+            </view>
+        </view>
+        <view class="recodeBtm">
+          <text class='redTitle'>检测温度恢复正常，由严重炒限降至正常</text>
+          <view class='titleRightBtm'>
+            <text>预警值：29℃</text>
+            <text>持续时间：12m</text>
+          </view>
+        </view>
+      </van-collapse-item>
+      <van-collapse-item name="2">
+        <view slot="title" class="titleTop">
+          <van-icon name="info" size="24px" color='#ff3128'/>
+            <view class='titleRightTop'>
+              <text>120KV西都变电厂</text>
+              <view class='titleRightBtm'>
+                <text>预警设备：西都102（10板）</text>
+                <text>2019-01-21 20:30:32</text>
+              </view>
+            </view>
+        </view>
+        <view class="recodeBtm">
+          <text class='redTitle'>检测温度恢复正常，由严重炒限降至正常</text>
+          <view class='titleRightBtm'>
+            <text>预警值：29℃</text>
+            <text>持续时间：12m</text>
+          </view>
+        </view>
+      </van-collapse-item>
+      <van-collapse-item name="3">
+        <view slot="title" class="titleTop">
+          <van-icon name="info" size="24px" color='#ff3128'/>
+            <view class='titleRightTop'>
+              <text>100KV风胡变电厂</text>
+              <view class='titleRightBtm'>
+                <text>预警设备：风胡101（16板）</text>
+                <text>2019-01-22 22:30:32</text>
+              </view>
+            </view>
+        </view>
+        <view class="recodeBtm">
+          <text class='redTitle'>检测温度恢复正常，由严重炒限降至正常</text>
+          <view class='titleRightBtm'>
+            <text>预警值：29℃</text>
+            <text>持续时间：12m</text>
+          </view>
+        </view>
+      </van-collapse-item>
+      <van-collapse-item name="4">
+        <view slot="title" class="titleTop">
+          <van-icon name="info" size="24px" color='#ff3128'/>
+            <view class='titleRightTop'>
+              <text>90KV韩富变电厂</text>
+              <view class='titleRightBtm'>
+                <text>预警设备：韩富201（16板）</text>
+                <text>2019-01-22 22:30:32</text>
+              </view>
+            </view>
+        </view>
+        <view class="recodeBtm">
+          <text class='redTitle'>检测温度恢复正常，由严重炒限降至正常</text>
+          <view class='titleRightBtm'>
+            <text>预警值：29℃</text>
+            <text>持续时间：12m</text>
+          </view>
+        </view>
+      </van-collapse-item>
+      <van-collapse-item name="5">
+        <view slot="title" class="titleTop">
+          <van-icon name="info" size="24px" color='#ff3128'/>
+            <view class='titleRightTop'>
+              <text>190KV七章变电厂</text>
+              <view class='titleRightBtm'>
+                <text>预警设备：七章109（15板）</text>
+                <text>2019-01-22 23:55:32</text>
+              </view>
+            </view>
+        </view>
+        <view class="recodeBtm">
+          <text class='redTitle'>检测温度恢复正常，由严重炒限降至正常</text>
+          <view class='titleRightBtm'>
+            <text>预警值：29℃</text>
+            <text>持续时间：12m</text>
+          </view>
+        </view>
+      </van-collapse-item>
+    </van-collapse>
+  </van-tab>
+  <van-tab title="操作事件">内容 2</van-tab>
+  <van-tab title="服务事件">内容 3</van-tab>
+</van-tabs>
+<!-- tabbar -->
+<view class='tabbars'>
+    <van-tabbar active="{{ tabActive }}" bind:change="onChange">
+      <van-tabbar-item icon="bar-chart-o">实时监控</van-tabbar-item>
+      <van-tabbar-item icon="setting-o">维修服务</van-tabbar-item>
+      <van-tabbar-item icon="orders-o">事件记录</van-tabbar-item>
+      <van-tabbar-item icon="manager-o">个人中心</van-tabbar-item>
+    </van-tabbar>
+  </view>

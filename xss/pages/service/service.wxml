@@ -1,0 +1,73 @@
+<!--pages/service/service.wxml-->
+<view style='background-color: #eaf1f7'>
+  <van-tabs active="{{ tabActive }}" color='#2088f7'>
+    <van-tab title="待接单">
+      <view class='list_item' bindtap='jumpCon'>
+        <view class="list_top">
+          <text class='time'>1分钟前</text>
+          <text class='name'>张三</text>
+          <text class='tel'>13764183387</text>
+        </view>
+        <view class='list_con'>
+          <text class='list_title'>淮南市田家庵区三河小区1楼101室</text>
+          <text class='list_btn'>接单</text>
+        </view>
+      </view>
+       <view class='list_item'>
+        <view class="list_top">
+          <text class='time'>10分钟前</text>
+          <text class='name'>李四</text>
+          <text class='tel'>13764183387</text>
+        </view>
+        <view class='list_con'>
+          <text class='list_title'>淮南市田家庵区三河小区3楼501室</text>
+          <text class='list_btn_jiao'>交工</text>
+        </view>
+      </view>
+      <view class='list_item' bindtap='jumpBill'>
+        <view class="list_top">
+          <text class='time'>14分钟前</text>
+          <text class='name'>王老二</text>
+          <text class='tel'>13764183387</text>
+        </view>
+        <view class='list_con'>
+          <text class='list_title'>淮南市田家庵区三河小区4栋112室</text>
+          <text class='list_btn_chu'>出单</text>
+        </view>
+      </view>
+      <view class='list_item'>
+        <view class="list_top">
+          <text class='time'>24分钟前</text>
+          <text class='name'>张小福</text>
+          <text class='tel'>13764183387</text>
+        </view>
+        <view class='list_con'>
+          <text class='list_title'>淮南市田家庵区京华小区1栋112室</text>
+          <text class='list_btn_chu'>出单</text>
+        </view>
+      </view>
+      <view class='list_item'>
+        <view class="list_top">
+          <text class='time'>45分钟前</text>
+          <text class='name'>黄其珊</text>
+          <text class='tel'>13764183387</text>
+        </view>
+        <view class='list_con'>
+          <text class='list_title'>淮南市田家庵区罢工小区2栋222室</text>
+          <text class='list_btn_chu'>出单</text>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="已处理">内容 2</van-tab>
+    <van-tab title="已完成">内容 3</van-tab>
+  </van-tabs>
+</view>
+
+<view class='tabbars'>
+  <van-tabbar active="{{ active }}" bind:change="onChange">
+    <van-tabbar-item icon="bar-chart-o">实时监控</van-tabbar-item>
+    <van-tabbar-item icon="setting-o">维修服务</van-tabbar-item>
+    <van-tabbar-item icon="orders-o">事件记录</van-tabbar-item>
+    <van-tabbar-item icon="manager-o">个人中心</van-tabbar-item>
+  </van-tabbar>
+</view>

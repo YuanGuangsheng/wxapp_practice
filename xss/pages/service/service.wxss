@@ -1,0 +1,58 @@
+/* pages/service/service.wxss */
+.list_item {
+  width: 90%;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin-left:5%;
+  margin-top: 10px;
+}
+.list_top {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+}
+.time {
+  font-size: 12px;
+  color: #a3a1a1;
+}
+.name {
+  font-size: 14px;
+}
+.tel {
+  font-size: 14px;
+  color: #2088f7;
+}
+.list_con {
+  margin-top: 15px;
+  text-align: center;
+}
+.list_title {
+  font-size: 16px;
+}
+.list_btn {
+  padding: 2px 5px;
+  background-color: #e70012;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.list_btn_jiao {
+  padding: 2px 5px;
+  background-color: #a0a0a0;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+.list_btn_chu {
+  padding: 2px 5px;
+  background-color: #2088f7;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+}

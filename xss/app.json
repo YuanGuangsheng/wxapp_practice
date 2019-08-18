@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/billing/billing",
+    "pages/service/service",
+    "pages/home/home",
+    "pages/tempchang/tempchang",
+    "pages/listcon/listcon",
+    "pages/recode/recode",
+    "pages/personcenter/personcenter",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#004db9",
+    "navigationBarTitleText": "电力抢修调度",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
