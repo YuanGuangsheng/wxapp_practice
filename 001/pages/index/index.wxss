@@ -1,21 +1,25 @@
 /**index.wxss**/
-.userinfo {
+.newsContent {
+  width: 750rpx;
+  height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 20rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.newsPic {
+  width: 750rpx;
+  height: 400rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.title {
+  font-size: 34rpx;
+  line-height: 50rpx;
+  text-align: left;
+  padding: 0 20rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.red {
+  color: #179B16;
 }
